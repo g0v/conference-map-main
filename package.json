@@ -1,6 +1,6 @@
 {
   "name": "project-confmap-main",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "* php5-redis  * php5-json",
   "main": "Gruntfile.js",
   "scripts": {
@@ -8,10 +8,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@bitbucket.org:unisharp/project-confmap-main.git"
+    "url": "git@github.com:UniSharp/conference-map-main.git"
   },
-  "author": "UniSharp",
-  "license": "",
+  "author": "UniSharp Ltd.",
+  "license": "MIT",
   "devDependencies": {
     "grunt-cssbeautifier": "~0.1.1",
     "grunt": "~0.4.4",
