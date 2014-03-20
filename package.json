@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git@github.com:UniSharp/conference-map-main.git"
   },
-  "author": "UniSharp Ltd.",
+  "author": "UniSharp Inc.",
   "license": "MIT",
   "devDependencies": {
     "grunt-cssbeautifier": "~0.1.1",
