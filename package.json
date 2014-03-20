@@ -1,0 +1,22 @@
+{
+  "name": "project-confmap-main",
+  "version": "0.0.0",
+  "description": "* php5-redis  * php5-json",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@bitbucket.org:unisharp/project-confmap-main.git"
+  },
+  "author": "UniSharp",
+  "license": "",
+  "devDependencies": {
+    "grunt-cssbeautifier": "~0.1.1",
+    "grunt": "~0.4.4",
+    "grunt-jsbeautifier": "~0.2.6",
+    "grunt-contrib-jshint": "~0.9.2",
+    "grunt-contrib-concat": "~0.3.0"
+  }
+}

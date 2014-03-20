@@ -1,0 +1,662 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#hd_wrap, #bd_wrap, #ft_wrap {
+  height: auto;
+  margin: 0 auto;
+  width: auto;
+}
+
+.grid_1,
+.grid_2,
+.grid_3,
+.grid_4,
+.grid_5,
+.grid_6,
+.grid_7,
+.grid_8,
+.grid_9,
+.grid_10,
+.grid_11,
+.grid_12 {
+  /*margin-left: 10px;
+  margin-right: 10px;*/;
+}
+
+.alpha,
+.omega {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.align_center,
+.align_right {
+  text-align: left;
+}
+
+.container_12 #hd {
+  padding: 6px 0;
+  border: 0;
+  margin: 0;
+}
+
+#hd .logo {
+  float: none;
+  background: url(../images/unisharp_mymap_logo_m.png) no-repeat;
+  height: 52px;
+  width: 240px;
+}
+
+.container_12 #hd p {
+  float: none;
+  line-height: 20px;
+  width: 100%;
+}
+
+.container_12 #hd h1 {
+  text-indent: 0;
+  margin: 0;
+  width: 100%;
+}
+
+#hd h1 {
+  font-size: 1.6em;
+  height: auto;
+  text-align: center;
+}
+
+#hd h1 img {
+  display: block;
+  margin: 0 auto;
+}
+
+#nav {
+  margin: 0;
+  width: 180px;
+  position: absolute;
+  background: rgb(243, 243, 243);
+  height: 100%;
+  z-index: 13;
+  left: 0;
+  top: 0;
+  display: none;
+  box-shadow: 0px 0px 20px rgba(100, 100, 100, 0.5);
+}
+
+#nav li {
+  width: 100%;
+  height: 34px;
+  text-align: center;
+  line-height: 34px;
+  margin: 0;
+  border-radius: 0;
+  border-bottom: 1px solid #ddd;
+  padding: 0;
+}
+
+#nav li a {
+  font-size: 1rem;
+  display: block;
+}
+
+#nav li a:hover {
+  text-decoration: none;
+}
+
+#nav li.cur {
+}
+
+#nav li.cur a {
+}
+
+#nav li:hover, #nav li:active, #nav li.cur {
+}
+
+#mobile_nav_controller {
+  border: 1px solid #999;
+  width: 8%;
+  height: 30px;
+  cursor: pointer;
+  position: absolute;
+  top: 14px;
+  line-height: 30px;
+  left: 2%;
+  text-align: center;
+  border-radius: 4px;
+  background: #B6B6B6;
+  padding: 0 3px;
+}
+
+
+/*
+move to default.css
+#mobile_nav_controller i{background:url(../images/mobile_nav_i.png) no-repeat;width: 17px;height: 17px;display: inline-block;background-size: contain;margin-top: 5px;}
+#mobile_nav_controller  a{display: block;
+vertical-align: top;}*/
+#mobile_nav_controller  a:hover {
+  text-decoration: none;
+}
+
+#bd {
+  margin-bottom: 0;
+  padding: 0;
+}
+
+#bd .date {
+  width: 65%;
+}
+
+#bd .date h3 {
+  float: left;
+}
+
+#bd .date ul {
+  width: 100%;
+  clear: both;
+  margin-bottom: 0;
+}
+
+#bd .date li {
+  float: left;
+  width: 29%;
+}
+
+#bd .date li:hover {
+  width: 29%;
+}
+
+#bd .date li.cur {
+  width: 40%;
+}
+
+#bd .date li a {
+  color: #fff;
+}
+
+#bd .date li a:hover {
+  text-decoration: none;
+}
+
+#bd .timeline {
+  display: none;
+/*暫時不顯示*/
+/*clear: both;
+width: 100%;
+overflow: hidden;
+height: 35px;
+text-align: center*/;
+}
+
+#bd .timeline ul {
+  width: 50%;
+  margin-top: 1px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#bd .timeline li {
+  height: 30px;
+  line-height: 30px;
+  background: #FFF;
+  border: 1px solid #DDD;
+  margin: 1px;
+  width: 100%;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+}
+
+#bd .timeline li:active,
+#bd .timeline li.cur {
+  background: #F0CB8A;
+}
+
+#bd .slider_tag {
+  line-height: 30px;
+  text-align: center;
+  cursor: pointer;
+}
+
+#slider_container {
+  width: 100%;
+}
+
+#bd .slider_tag {
+  display: block;
+  position: relative;
+  left: 24px;
+  height: 30px;
+  line-height: 30px;
+  background: #F3E7BF;
+  border: 1px solid #ddd;
+  width: 160px;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+}
+
+#bd .slider_tag:focus {
+  border: none;
+}
+
+#bd .program {
+  background: #FFFFFF;
+  height: auto;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  border-radius: 0;
+}
+
+#ft {
+  text-align: center;
+  margin: auto;
+}
+
+
+/*mobile can't show this area when click slider's button START*/
+.ui-widget-header {
+  display: none!important;
+}
+
+.ui-slider-vertical .ui-slider-range-max {
+  dispay: none!important;
+}
+
+.ui-slider-vertical .ui-slider-range {
+  dispay: none!important;
+}
+
+.ui-slider .ui-slider-range {
+  dispay: none;
+}
+/*mobile can't show this area when click slider's button END*/
+.deit_my_progream {
+  margin: 0;
+  width: 100%;
+}
+
+.deit_my_progream a {
+  padding: 0;
+  width: auto;
+  height: 35px;
+  display: block;
+  text-align: center;
+  border-radius: 0;
+  line-height: 35px;
+}
+
+ul.slidesjs-pagination {
+  width: 100%;
+  top: 148px;
+  margin: 0;
+  left: 0;
+}
+
+.slidesjs-pagination-item a {
+  font-size: 1.5rem;
+}
+
+ul.slidesjs-pagination li.custom_triangle1 .triangle {
+  border-width: 10px 0 10px 15px;
+}
+
+ul.slidesjs-pagination li.custom_triangle0 .triangle {
+  border-width: 10px 15px 10px 0;
+  margin-right: 5px;
+}
+
+.slidesjs-container {
+  margin: 0;
+}
+
+ul.slidesjs-pagination li.custom_triangle0 {
+  margin-left: 10px;
+}
+
+ul.slidesjs-pagination li.custom_triangle1 {
+  margin-right: 10px;
+}
+
+#layer_slides .session {
+  position: static;
+  margin-bottom: 10px;
+  margin: 10px;
+  border-radius: 4px;
+  padding: 0 7px;
+}
+
+#Room_1,
+#Room_2,
+#Room_3,
+#Room_4,
+#Room_5,
+#Room_6,
+#Room_7,
+#Room_8,
+#Room_9,
+#Room_0 {
+  width: auto!important;
+}
+
+#room4_and_room3,
+#room1_and_room2,
+#room7_and_room8,
+#room5_and_room6 {
+/*S102 S103*/
+  width: 50%;
+}
+
+#room4_and_room3,
+#room7_and_room8 {
+  float: left;
+}
+
+#room1_and_room2,
+#room5_and_room6 {
+  float: right;
+}
+
+#layer_slides .session.s101AB, #layer_slides .session.s101CD {
+/*float: right;*/
+  width: auto!important;
+}
+
+#Room_9 {
+/*float: right;*/
+  width: auto!important;
+}
+
+#layer_slides .session.s201AB, #layer_slides .session.s201EF {
+/*float:right;*/
+  width: auto!important;
+}
+
+#layer_slides .session.sall {
+/*float:right;*/
+  width: auto!important;
+}
+
+#compass {
+/*
+width: 70px;
+height: 70px;
+margin-top: -158px;
+float: right;*/
+  display: none;
+}
+
+#custom_program_navi {
+  width: 100%;
+  z-index: 12;
+  clear: both;
+  background: #999;
+  padding: 4px 0;
+}
+
+#linkGoPreProgram,
+#linkGoNextProgram {
+  width: 16%;
+}
+
+#linkGoPreProgram {
+  float: left;
+  margin-right: 2%;
+  margin-left: 1%;
+}
+
+#linkGoNextProgram {
+  float: right;
+  margin-right: 1%;
+}
+
+#SelectedTime {
+  width: 25%;
+  margin-left: 2%;
+  text-align: center;
+  float: left;
+  margin-top: 0;
+  margin-bottom: 0;
+  height: auto;
+  height: 30px;
+}
+
+#DateTable {
+  width: 28%;
+  float: left;
+  margin-bottom: 0;
+}
+
+#DateTable li {
+  float: left;
+  width: 42%;
+  margin-right: 5px;
+  text-align: center;
+  margin-left: 0;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 0 5px 0 0;
+  font-size: 1em;
+}
+/*#DateTable li.cur{background: #333;color:#fff;}*/
+#floor_name {
+  top: 140px;
+}
+
+#map .x,
+#map .y {
+  display: none;
+}
+
+#layer_slides .icons {
+  display: none!important;
+}
+
+#nav li.edit_my_program {
+  width: 180px;
+}
+
+#map_slider {
+  height: 40px;
+}
+
+#hotkey_info {
+  display: none;
+}
+
+#floor_name, #date_name {
+  width: 100%;
+}
+
+/*議程裡面的說明文字先隱藏*/
+#layer_slides .session p,
+#layer_slides .session .program_lang {
+  display: none;
+}
+
+.slidesjs-container {
+  height: 390px !important;
+}
+
+#save_box {
+  margin: 10px;
+}
+
+#set_personal_url_frm .column {
+  margin-top: 10px;
+  height: auto;
+}
+
+
+/*我的議程頁面-列表板專用mobile css START*/
+#myprogram_timeline {
+  background: #fff;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  width: auto;
+  margin: 10px;
+}
+
+.play_my_program {
+  float: none;
+  margin-top: 15px;
+}
+
+.play_my_program a {
+  padding: 6px 10px;
+  background: #FFDD94;
+  border-radius: 0;
+  width: auto;
+  display: block;
+  text-align: center;
+}
+
+#myprogram_timeline article {
+  background: url(../images/act_line.png) repeat-y -14px 12%;
+  background-size: contain;
+  height: auto;
+}
+
+#myprogram_timeline article .current_session {
+  width: 65%;
+  overflow: hidden;
+}
+/*我的議程頁面-列表板專用mobile css END*/
+
+
+/*空白頁面專用mobile css START*/
+.empty_wrap {
+  background: #fff;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  width: auto;
+  margin: 10px;
+}
+/*空白頁面專用mobile css START*/
+
+
+/*我的議程頁面-動畫專用mobile css START*/
+.timeline {
+  display: none!important;
+}
+/*我的議程頁面-動畫專用mobile css END*/
+
+
+
+.diy_tip {
+/*issue 36*/
+  left: 10%;
+  top: 5%;
+  z-index: 15;
+}
+
+#layer_slides {
+  margin: 0;
+}
+/*手機版不需要播放我的趕場路線*/
+.play_my_program {
+  display: none!important;
+}
+
+.notice {
+  margin: 0px 0;
+  padding: 0px 6px;
+  border-radius: 6px;
+  display: inline;
+}
+
+#myprogram_timeline article .current_session {
+  height: 37px;
+}
+
+#myprogram_timeline article .current_session p {
+  line-height: 18px;
+}
+
+#map_info {
+  display: none;
+}
+
+#next_step {
+  display: none;
+}
+
+.fb-like {
+  top: 0;
+  left: 14px;
+}
+
+.fb-like#fb-like-myprogram {
+  top: 0px;
+  left: -10px;
+  float: right;
+}
+
+#diy_controller {
+  margin: 5px;
+  width: 97%;
+}
+
+.play_btn {
+  display: none;
+}
+
+.reset_btn {
+  height: 14px;
+}
+
+#my_program_nickname {
+  margin-bottom: 7px;
+}
+
+#program_ {
+  display: none;
+} /*暫時先隱藏沒有帶id的program_的左側nav  issue#51*/
+.add_to_fb_page {
+  width: 91px;
+  background-color: #eee;
+  border-color: #ddd;
+  text-align: center;
+  position: relative;
+  top: -6px;
+  left: 20px;
+}
+
+#about_wrap .step li,
+.static_page .step li {
+  margin-left: 0;
+}
+
+#about_wrap .lower_alpha li,
+.static_page .lower_alpha li {
+  width: 100%;
+}
+
+#about_wrap .step p,
+.static_page .step p {
+  min-height: 45px;
+  height: auto;
+}
+
+#about_wrap .custom_btn,
+.static_page .custom_btn {
+  padding: 1px 7px;
+  margin: 1px 3px;
+  font-size: 13px;
+}
+
+#mobile_information {
+  padding: 10px;
+  min-height: 250px;
+  font-size: 1.4rem;
+}
+
+.fb-like.fb_edge_widget_with_comment.fb_iframe_widget {
+  width: 76%;
+  margin-left: 6px;
+  top: -5px;
+}
+

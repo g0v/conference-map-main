@@ -1,0 +1,714 @@
+/*
+  960 Grid System ~ Core CSS.
+  Learn more ~ http://960.gs/
+
+  Licensed under GPL and MIT.
+*/
+
+/*
+  Forces backgrounds to span full width,
+  even if there is horizontal scrolling.
+  Increase this if your layout is wider.
+
+  Note: IE6 works fine without this fix.
+*/
+
+body {
+  min-width: 720px;
+}
+
+/* `Containers
+----------------------------------------------------------------------------------------------------*/
+
+.container_12 {
+ /* margin-left: auto;
+  margin-right: auto;
+  width: 720px;*/
+  width: 100%;
+}
+
+/* `Grid >> Global
+----------------------------------------------------------------------------------------------------*/
+
+.grid_1,
+.grid_2,
+.grid_3,
+.grid_4,
+.grid_5,
+.grid_6,
+.grid_7,
+.grid_8,
+.grid_9,
+.grid_10,
+.grid_11,
+.grid_12 {
+  display: inline;
+  float: left;
+ /*margin-left: 10px;
+  margin-right: 10px;*/;
+}
+
+.push_1, .pull_1,
+.push_2, .pull_2,
+.push_3, .pull_3,
+.push_4, .pull_4,
+.push_5, .pull_5,
+.push_6, .pull_6,
+.push_7, .pull_7,
+.push_8, .pull_8,
+.push_9, .pull_9,
+.push_10, .pull_10,
+.push_11, .pull_11 {
+  position: relative;
+}
+
+/* `Grid >> Children (Alpha ~ First, Omega ~ Last)
+----------------------------------------------------------------------------------------------------*/
+
+.alpha {
+  margin-left: 0;
+}
+
+.omega {
+  margin-right: 0;
+}
+
+/* `Grid >> 12 Columns
+----------------------------------------------------------------------------------------------------*/
+
+.container_12 .grid_1 {
+  width: 40px;
+}
+
+.container_12 .grid_2 {
+  width: 100px;
+}
+
+.container_12 .grid_3 {
+  width: 138px;
+  margin: 2px 0 0 0;
+}
+
+.container_12 .grid_4 {
+  width: 220px;
+}
+
+.container_12 .grid_5 {
+  width: 280px;
+}
+
+.container_12 .grid_6 {
+  width: 340px;
+}
+
+.container_12 .grid_7 {
+  width: 400px;
+}
+
+.container_12 .grid_8 {
+  width: 460px;
+}
+
+.container_12 .grid_9 {
+  /*width: 448px;*/
+  margin-left: 0px;
+}
+
+ul.slidesjs-pagination,
+.container_12 .grid_9 {
+ /* width: 558px;*/
+  width: 566px;
+}
+
+.container_12 .grid_10 {
+  width: 580px;
+}
+
+.container_12 .grid_11 {
+  width: 640px;
+}
+
+.container_12 .grid_12 {
+  /*width: 700px;*/
+  width: 100%;
+}
+
+/* `Prefix Extra Space >> 12 Columns
+----------------------------------------------------------------------------------------------------*/
+
+.container_12 .prefix_1 {
+  padding-left: 60px;
+}
+
+.container_12 .prefix_2 {
+  padding-left: 120px;
+}
+
+.container_12 .prefix_3 {
+  padding-left: 180px;
+}
+
+.container_12 .prefix_4 {
+  padding-left: 240px;
+}
+
+.container_12 .prefix_5 {
+  padding-left: 300px;
+}
+
+.container_12 .prefix_6 {
+  padding-left: 360px;
+}
+
+.container_12 .prefix_7 {
+  padding-left: 420px;
+}
+
+.container_12 .prefix_8 {
+  padding-left: 480px;
+}
+
+.container_12 .prefix_9 {
+  padding-left: 540px;
+}
+
+.container_12 .prefix_10 {
+  padding-left: 600px;
+}
+
+.container_12 .prefix_11 {
+  padding-left: 660px;
+}
+
+/* `Suffix Extra Space >> 12 Columns
+----------------------------------------------------------------------------------------------------*/
+
+.container_12 .suffix_1 {
+  padding-right: 60px;
+}
+
+.container_12 .suffix_2 {
+  padding-right: 120px;
+}
+
+.container_12 .suffix_3 {
+  padding-right: 180px;
+}
+
+.container_12 .suffix_4 {
+  padding-right: 240px;
+}
+
+.container_12 .suffix_5 {
+  padding-right: 300px;
+}
+
+.container_12 .suffix_6 {
+  padding-right: 360px;
+}
+
+.container_12 .suffix_7 {
+  padding-right: 420px;
+}
+
+.container_12 .suffix_8 {
+  padding-right: 480px;
+}
+
+.container_12 .suffix_9 {
+  padding-right: 540px;
+}
+
+.container_12 .suffix_10 {
+  padding-right: 600px;
+}
+
+.container_12 .suffix_11 {
+  padding-right: 660px;
+}
+
+/* `Push Space >> 12 Columns
+----------------------------------------------------------------------------------------------------*/
+
+.container_12 .push_1 {
+  left: 60px;
+}
+
+.container_12 .push_2 {
+  left: 120px;
+}
+
+.container_12 .push_3 {
+  left: 180px;
+}
+
+.container_12 .push_4 {
+  left: 240px;
+}
+
+.container_12 .push_5 {
+  left: 300px;
+}
+
+.container_12 .push_6 {
+  left: 360px;
+}
+
+.container_12 .push_7 {
+  left: 420px;
+}
+
+.container_12 .push_8 {
+  left: 480px;
+}
+
+.container_12 .push_9 {
+  left: 540px;
+}
+
+.container_12 .push_10 {
+  left: 600px;
+}
+
+.container_12 .push_11 {
+  left: 660px;
+}
+
+/* `Pull Space >> 12 Columns
+----------------------------------------------------------------------------------------------------*/
+
+.container_12 .pull_1 {
+  left: -60px;
+}
+
+.container_12 .pull_2 {
+  left: -120px;
+}
+
+.container_12 .pull_3 {
+  left: -180px;
+}
+
+.container_12 .pull_4 {
+  left: -240px;
+}
+
+.container_12 .pull_5 {
+  left: -300px;
+}
+
+.container_12 .pull_6 {
+  left: -360px;
+}
+
+.container_12 .pull_7 {
+  left: -420px;
+}
+
+.container_12 .pull_8 {
+  left: -480px;
+}
+
+.container_12 .pull_9 {
+  left: -540px;
+}
+
+.container_12 .pull_10 {
+  left: -600px;
+}
+
+.container_12 .pull_11 {
+  left: -660px;
+}
+
+/* `Clear Floated Elements
+----------------------------------------------------------------------------------------------------*/
+
+/* http://sonspring.com/journal/clearing-floats */
+
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+/* http://www.yuiblog.com/blog/2010/09/27/clearfix-reloaded-overflowhidden-demystified */
+
+.clearfix:before,
+.clearfix:after,
+.container_12:before,
+.container_12:after {
+  content: '.';
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  font-size: 0;
+  line-height: 0;
+  width: 0;
+  height: 0;
+}
+
+.clearfix:after,
+.container_12:after {
+  clear: both;
+}
+
+/*
+  The following zoom:1 rule is specifically for IE6 + IE7.
+  Move to separate stylesheet if invalid CSS is a problem.
+*/
+
+.clearfix,
+.container_12 {
+  zoom: 1;
+}
+
+
+
+/*
+  Custom Style START From Here
+*/
+#hd_wrap ,
+#bd_wrap,
+#ft_wrap {
+  height: auto;
+  margin: 0 auto;
+  width: 720px;
+}
+
+#bd_wrap.onlymap {
+  width: 566px;
+}/*因為不需要左側欄位 改成850讓他置中*/
+.container_12 #hd h1 {
+  margin-left: 0px;
+}
+
+.container_12 {
+  margin: 0 auto;
+}
+
+.container_12 #hd {
+  height: auto;
+  width: 100%;
+}
+
+#bd {
+  background: #f1f0ee;
+  padding-bottom: 15px;
+  width: 100%;
+}
+
+#bd .left {
+  float: left;
+}
+
+#bd .right {
+  float: right;
+}
+
+#bd .slider {
+  float: left;
+}
+
+#bd .timeline,
+#bd .timeline ul {
+  margin-bottom: 0;
+}
+
+#bd .timeline li {
+  width: 100px;
+}
+
+#bd .timeline li:hover a {
+  color: #4de4f7;
+}
+
+#bd .timeline li a {
+  color: #333;
+}
+
+#bd .timeline li a:hover {
+  color: #4de4f7;
+  text-decoration: none;
+}
+
+#bd #slider_container,
+#bd #slider {
+  height: 350px;
+}
+
+#bd #slider a {
+  outline: none;
+}/*clear IE outlive*/
+#bd #slider a {
+  outline: none;
+  text-decoration: none;
+}/*clear IE outlive*/
+#bd .tl {
+  float: left;
+  margin-top: 64px;
+  margin-left: 20px;
+  color: #999;
+}
+
+#slider_container {
+  margin-left: 8px;
+  float: left;
+}
+
+#bd .slider_tag {
+  display: block;
+  position: relative;
+  left: 32px;
+  height: 30px;
+  line-height: 30px;
+  background: #F3E7BF;
+  border: 1px solid #ddd;
+  width: 160px;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+}
+
+#bd .slider_tag:focus {
+  border: none;
+}
+
+#bd .timeline li {
+  height: 22px;
+  line-height: 22px;
+}
+
+#bd .timeline .icon.break {
+  margin-top: 0px;
+  height: 20px;
+  margin-bottom: -3px;
+}
+
+nav.date li.cur {
+  width: 53%;
+}
+
+#map .x {
+  height: 16px;
+  width: 16px;
+}
+
+#map .y {
+  height: 16px;
+}
+
+#floor_name {
+  width: 544px;
+}
+
+#compass {
+  left: 82%;
+}
+
+h5[class ^="colorTag"] {
+  margin-top: 2px;
+}
+
+#custom_program_navi {
+  display: none;
+  top: 113px;
+  margin-left: 81px;
+}/*在平板上先隱藏上一場下一場時間三個區塊*/
+#layer_slides .session {
+  border-radius: 4px;
+}
+
+#layer_slides h5 {
+  font-size: 13px;
+  margin-bottom: 4px;
+}
+
+#layer_slides .session p {
+  line-height: 14px;
+}
+
+#layer_slides .s101AB p {
+}
+
+#layer_slides .session .program_lang {
+  font-size: 10px;
+  margin-left: 10px;
+  padding: 1px 5px;
+  border-radius: 2px;
+  float: left;
+  display: inline-block;
+  height: 19px;
+  margin-right: 4px;
+  border-radius: 4px;
+}
+
+.slidesjs-container {
+  height: 300px !important;
+  margin-top: 15px;
+}
+
+.slidesjs-navigation, .go_program {
+  padding: 2px 1px;
+}
+
+#hotkey_info {
+  top: 0px;
+  font-size: 10px;
+  display: none;
+}
+
+#myprogram_timeline,
+.empty_wrap {
+  width: auto;
+}
+
+.diy_tip {
+  top: 8%;
+  left: 36%;
+}
+
+#map_info {
+  left: 37%;
+}
+
+#date_name {
+  width: 630px;
+}
+
+.notice i {
+  position: relative;
+  top: 1px;
+}
+
+#diy_controller {
+  float: left;
+  margin-left: 0;
+  width: 579px;
+  margin-bottom: 4px;
+}
+
+#bd .program {
+  float: right;
+}
+
+#map_info {
+  height: auto;
+  margin-top: 2px;
+}
+
+
+
+/*在大會議程點x軸要出現的對話框*/
+#popup_tooltip {
+  background: #fff;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 350px;
+  height: auto;
+  z-index: 15;
+  moz-box-shadow: 3px 2px 7px 2px #ccc;
+  -webkit-box-shadow: 3px 2px 7px 2px #ccc;
+  box-shadow: 3px 2px 7px 2px #CCC;
+}
+
+#users_message {
+  background: #eee;
+  height: auto;
+  overflow: scroll;
+  overflow-y: scroll;
+  overflow: -moz-scrollbars-vertical;
+  max-height: 200px;
+}
+
+#users_message img {
+  display: inline-block;
+  height: 42px;
+  width: 42px;
+  border: none;
+  margin: 4px 7px 4px -1px;
+  float: left;
+  border-radius: 5px;
+}
+
+#users_message .content_txt {
+  float: left;
+  display: block;
+  text-align: left;
+  max-width: 264px;
+}
+
+#users_message li {
+  clear: both;
+  margin-right: 2px;
+}
+
+#popup_tooltip .custom_btn {
+  width: 58px;
+  height: 32px;
+  padding: 2px;
+}
+
+#popup_tooltip .txt_and_btn_wrap {
+  padding: 0 10px 10px 10px;
+}
+
+#popup_tooltip textarea {
+  resize: vertical;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 6px;
+}
+
+#popup_tooltip .fb_login {
+  border-radius: 7px;
+  width: 100px;
+  text-indent: 29px;
+  line-height: 35px;
+}
+
+#popup_tooltip .custom_input_text {
+  width: 100px;
+}
+
+#popup_tooltip .left_triangle {
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 12px 20.8px 12px 0;
+  border-color: transparent #5BA9D6 transparent transparent;
+  position: absolute;
+  left: -17px;
+  top: 8px;
+  z-index: -1;
+}
+
+#popup_tooltip #user_msg_input {
+  width: 97%;
+  margin-bottom: 5px;
+}
+
+#popup_tooltip input[type=text]:focus {
+  border: 1px solid #666;
+  outline: none;
+}
+
+#popup_tooltip.no_shadow {
+/*當對話框與背景背目並存時 shadow變深色*/
+  -webkit-box-shadow: 3px 2px 7px 2px #333;
+  box-shadow: 3px 2px 7px 2px #333;
+}
+
+#popup_tooltip .custom_btn:active {
+  position: static;
+}
+
+.new_talk {
+  line-height: 16px;
+}

@@ -1,0 +1,13 @@
+{
+  "name": "我的活動地圖 for COSCUP 2013",
+  "description": "COSCUP 2013 專用地圖 APP",
+  "launch_path": "/",
+  "icons": {
+    "128": "/assets/images/unisharp-128.png"
+  },
+  "developer": {
+    "name": "悠夏爾科技股份有限公司",
+    "url": "http://www.unisharp.com"
+  },
+  "default_locale": "zh-Hant-TW"
+}
