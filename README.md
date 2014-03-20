@@ -11,7 +11,7 @@
 
 ## Licensing
 
- * Copyright (C) 2013-2014 UniSharp Ltd.
+ * Copyright (C) 2013-2014 UniSharp Inc.
  * Distributed Under the MIT License.
 
 ### Third Party License
@@ -37,4 +37,3 @@
 | css beautifier  | grunt cssbu   |
 | js beautifier   | grunt jsbu    |
 | js Hint  	      | grunt jshi    |
-

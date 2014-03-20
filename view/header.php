@@ -33,7 +33,7 @@ if (isset($ENV['WITHCACHE'])) {
 <meta charset="utf-8" />
 <meta http-equiv="x-ua-compatible" content="ie=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
-<meta name="author" content="UniSharp" />
+<meta name="author" content="UniSharp Inc." />
 <meta name="description" content="我的活動地圖，您辦活的的好幫手。" />
 <meta name="keywords" content="活動地圖, 辦活動, COSCUP">
 
