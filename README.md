@@ -2,11 +2,12 @@
 
  * php5-redis
  * php5-json
-
+ * [Conference Map socket.io server](https://github.com/UniSharp/conference-map-message-server)
 
 ## TODO
 
  * [TODO] Use ethercalc as the map/room/programs/conference backend.
+ * nginx support? (currently only tested on apache2)
 
 ## Licensing
 
