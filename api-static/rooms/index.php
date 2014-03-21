@@ -31,7 +31,7 @@ try {
     // do nothing
 }
 
-if ($cache_data && false) {
+if ($cache_data) {
     echo $cache_data;
 } else {
     $resp_array = array(
