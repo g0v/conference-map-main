@@ -585,8 +585,7 @@ Room: 攤位、會議室、特殊地點 (ex.充電區)
             var this_div_style = 'top:' + iTop + 'px; left:' + iLeft + 'px; z-index:' + z_location + '; width: ' + ((o_item.width * each_width) - (rooms_div_padding * 2 /*padding:4px*/ )) + 'px; height: ' + ((o_item.height * each_height) - (rooms_div_padding * 2 /*padding:4px*/ )) + 'px';
 
             $('#F' + floor).prepend(
-                '<div id="Room_' + sRoomIndex + '" data-id="' + sRoomIndex + '" name="' + sLocation + '" data-location="' + sLocation + '" class="session ' + 's' + o_item.name + '" style="' + this_div_style + '">' +
-                '</div>'); //移除在#Room_0~#Room_9的onclick="switchRoom event"
+                '<div id="Room_' + sRoomIndex + '" data-id="' + sRoomIndex + '" name="' + sLocation + '" data-location="' + sLocation + '" class="session ' + 's' + o_item.name + '" style="' + this_div_style + '">' + '<span class="room_name room_tag">' + o_item.name +'</span></div>'); //移除在#Room_0~#Room_9的onclick="switchRoom event"
 
             $('#Room_' + sRoomIndex).fadeIn();
 

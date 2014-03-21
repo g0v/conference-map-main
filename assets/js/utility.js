@@ -118,8 +118,9 @@ function oRoom(sLocation, sWidth, sHeight, sType, sName, sRoomIndex) {
     if (sRoomIndex == "0") {
         this.name = "全場地聯播";
     } else {
-        this.name += "會議室";
+        //this.name += "會議室";
     }
+
 }
 
 
