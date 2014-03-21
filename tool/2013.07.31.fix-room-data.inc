@@ -1,5 +1,5 @@
 <?php
-include_once 'UniSharp/client/UsRedisClient.inc';
+include_once dirname(__FILE__) . '/../lib/UsRedisClient.inc';
 
 $client = new UsRedisClient(false);
 

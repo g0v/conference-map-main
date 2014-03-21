@@ -37,8 +37,8 @@ if (!$pass) {
 */
 
 
-require_once 'UniSharp/client/UsRedisClient.inc';
-require_once 'UniSharp/config/UsConfigCache.inc';
+require_once dirname(__FILE__) . '/../../../lib/UsRedisClient.inc';
+require_once dirname(__FILE__) . '/../../../UsConfigCache.inc';
 
 $UsConfigCache = UsConfigCache::getInstance($REDIS_CONFIG);
 $UsRedisClient = NULL;

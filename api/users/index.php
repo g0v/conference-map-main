@@ -15,7 +15,7 @@
 require_once dirname(__FILE__) . '/../../lib/UserClient.inc';
 require_once dirname(__FILE__) . '/../../lib/UsSecurity.inc';
 require_once dirname(__FILE__) . '/../../conf/config.inc';
-require_once 'UniSharp/config/UsConfigCache.inc';
+require_once dirname(__FILE__) . '/../../lib/UsConfigCache.inc';
 
 function do_response($http_code, $status_code, $message, $data = NULL) {
     header('Content-Type: application/json; charset=utf-8');
@@ -178,4 +178,3 @@ if ($UserClient) {
 } else {
     do_response(500, 50001, "Storage error");
 }
-

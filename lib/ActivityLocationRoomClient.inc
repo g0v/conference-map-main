@@ -5,8 +5,8 @@
  * 例, 某某座標，有著哪個會議室
  * key: x:y:z, value: json { type, name }
 */
-include_once 'UniSharp/client/UsRedisClient.inc';
-include_once 'UniSharp/config/UsConfig.inc';
+include_once dirname(__FILE__) . '/UsRedisClient.inc';
+include_once dirname(__FILE__) . '/UsConfig.inc';
 
 class ActivityLocationRoomClient extends UsRedisHashClient {
     public static $key_prefix = 'Activity:LocationRoom:';
@@ -15,4 +15,3 @@ class ActivityLocationRoomClient extends UsRedisHashClient {
         return parent::__construct($config);
     }
 }
-

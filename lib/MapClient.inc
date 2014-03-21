@@ -3,8 +3,8 @@
  * 地點資訊 Client
  * 存放活動地點，例如 TICC
 */
-include_once 'UniSharp/client/UsRedisClient.inc';
-include_once 'UniSharp/config/UsConfig.inc';
+include_once dirname(__FILE__) . '/UsRedisClient.inc';
+include_once dirname(__FILE__) . '/UsConfig.inc';
 
 
 class MapClient extends UsRedisHashClient {
@@ -15,4 +15,3 @@ class MapClient extends UsRedisHashClient {
     }
 
 }
-

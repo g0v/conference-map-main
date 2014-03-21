@@ -7,8 +7,8 @@
  * Timestamp, T
  * Activity, A
 */
-include_once 'UniSharp/client/UsRedisClient.inc';
-include_once 'UniSharp/config/UsConfig.inc';
+include_once dirname(__FILE__) . '/UsRedisClient.inc';
+include_once dirname(__FILE__) . '/UsConfig.inc';
 
 class UserActivityTimestampLocationClient extends UsRedisHashClient {
     public static $key_prefix = 'UserActivity:TimestampLocation:';
@@ -17,4 +17,3 @@ class UserActivityTimestampLocationClient extends UsRedisHashClient {
         return parent::__construct($config);
     }
 }
-

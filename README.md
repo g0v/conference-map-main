@@ -6,8 +6,7 @@
 
 ## TODO
 
- * TODO - Remove unisharp general lib dependence
-
+ * [TODO] Use ethercalc as the map/room/programs/conference backend.
 
 ## Licensing
 

@@ -1,7 +1,7 @@
 <?php
 require_once dirname(__FILE__) . '/../../conf/config.inc';
-require_once 'UniSharp/client/UsRedisClient.inc';
-require_once 'UniSharp/config/UsConfigCache.inc';
+require_once dirname(__FILE__) . '/../../lib/UsRedisClient.inc';
+require_once dirname(__FILE__) . '/../../lib/UsConfigCache.inc';
 require_once dirname(__FILE__) . '/../../lib/UsSecurity.inc';
 
 // TODO 404
