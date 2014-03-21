@@ -70,7 +70,7 @@ var chatMap = (function() {
             view.user_msg_input.val('');
 
             //加入讓li自動卷到最下方的function
-            view.set_dom_scroll_to_bottom(view.user_messages, view.user_message_item);
+            view.set_dom_scroll_to_bottom();
 
             var data_obj = {
                 nickname: nickname,
@@ -181,9 +181,6 @@ var chatMap = (function() {
                 }
             });
         }
-
-
-
     };
 
     var view = {
@@ -215,17 +212,17 @@ var chatMap = (function() {
             return $this;
         },
 
-        set_dom_scroll_to_bottom: function(scroll_dom, counted_dom) {
+        set_dom_scroll_to_bottom: function() {
             /*
              * set_dom_scroll_to_bottom:每當新增一筆留言,要偵測li的總高,動態一到下方最新一筆
              * scroll_dom 要捲動高度的dom
              * counted_dom 要計算的對象
              */
             var total_height = 0;
-            $(counted_dom).each(function() {
+            $('#users_message li').each(function() {
                 total_height = total_height + parseInt($(this).height());
             });
-            $(scroll_dom).scrollTop(total_height);
+            $('#users_message').scrollTop(total_height);
         }
 
     };
@@ -270,19 +267,19 @@ var chatMap = (function() {
          */
         socket.on('updatechat', function(data_obj) {
             view.user_messages.append(view.users_message_append_string_generator(data_obj));
-            view.set_dom_scroll_to_bottom(view.user_messages, view.user_message_item);
+            view.set_dom_scroll_to_bottom();
         });
 
         // when the client clicks SEND
         view.datasend_btn.click(function() {
             controller.sendMessage();
-            view.set_dom_scroll_to_bottom(view.user_messages, view.user_message_item);
+            view.set_dom_scroll_to_bottom();
         });
 
         view.user_msg_input.keypress(function(e) {
             if (e.which == 13) {
                 controller.sendMessage();
-                view.set_dom_scroll_to_bottom(view.user_messages, view.user_message_item);
+                view.set_dom_scroll_to_bottom();
             }
         });
 
@@ -292,7 +289,7 @@ var chatMap = (function() {
                 $(this).blur();
                 controller.sendMessage();
                 //$('#datasend').focus().click();
-                view.set_dom_scroll_to_bottom(view.user_messages, view.user_message_item);
+                view.set_dom_scroll_to_bottom();
             }
         });
 
@@ -326,7 +323,9 @@ var chatMap = (function() {
             //點過之後，要把這個地方設定為已閱讀
             var o_RoomUnit = new oRoomUnit(rooms);
             controller.showOldMessage(o_RoomUnit, 0, 0);
-            view.set_dom_scroll_to_bottom(view.user_messages, view.user_message_item);
+            //view.set_dom_scroll_to_bottom(view.user_messages, view.user_message_item);
+            //view.set_dom_scroll_to_bottom($('#users_message'), $('#users_message li'));
+            view.set_dom_scroll_to_bottom();
 
         });
 
@@ -419,7 +418,6 @@ var chatMap = (function() {
                     each_animation_map_box_w = $('#map .x').width(),
                     $animation_map_box = $('#animation_map_box'),
                     $left_triangle = $('.left_triangle');
-                //alert('show_popup_tooltip_on_map');
                 //地圖上x坐標的事件綁定  重要:只有我的大會議程有這個功能
                 $('#map').delegate(".x", "click", function() {
                     var $e = $(this),
