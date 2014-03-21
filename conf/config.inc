@@ -24,7 +24,7 @@ function &get_activity_array() {
 }
 
 $CONFIG['ACTIVITY_ARRAY'] = get_activity_array();
-$CONFIG['DEFAULT_ACTIVITY_ID'] = 'COSCUP_2013';
+$CONFIG['DEFAULT_ACTIVITY_ID'] = 'congressoccupied';
 
 $REDIS_CONFIG['redis_host'] = '127.0.0.1';
 $REDIS_CONFIG['redis_port'] = 6379;

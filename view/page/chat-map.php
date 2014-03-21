@@ -26,9 +26,7 @@ UsSecurity::filter_xss($u_id_from_cookie);
     ?>
     <div id="bd"  class="grid_12 clearfix">
     <div id="mobile_information" style="display:none">
-        您好，如果您是使用 QR Code 進入到這個頁面，我們由衷向您致歉。<br>
-        此頁提供線上即時聊天功能，為了提供更好的品質，目前暫不支援手機及平板電腦。<br>
-        您仍然可以使用 [<a href="/<?php echo $PAGE['ACTIVITY_INFO']['ACTIVITY_ID'];?>/program">大會議程</a>] 功能查看議程的時間、標題以及會議室資訊。
+        目前暫不支援手機及平板電腦。
     </div>
     <div id="bd_wrap" class="clearfix onlymap">
         <?php
