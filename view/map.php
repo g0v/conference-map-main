@@ -12,9 +12,10 @@ $hotkey_info_array1 = array(
 );
 
 $hotkey_info_array2 = array(
-    "1"=>"1F",
-    "2"=>"2F",
+    "1"=>"Location 1",
+    "2"=>"Location 2",
 );
+
 
 // FIXME use $PAGE variabe, not $page_type
 if ($PAGE['ACTIVITY_INFO']['ACTION_ID'] == 'user-program') {
@@ -27,13 +28,13 @@ if ($PAGE['ACTIVITY_INFO']['ACTION_ID'] == 'user-program') {
 } // end user-program
 ?>
         <div id="diy_controller" class="grid_9 right clearfix">
-            <button class="custom_btn prev_floor" onClick=" trigger_slider_floor(1);"><i class="icon prev" style="vertical-align:baseline;" alt="Previous"></i> 1F</button>
+            <button class="custom_btn prev_floor" onClick=" trigger_slider_floor(1);"><i class="icon prev" style="vertical-align:baseline;" alt="Previous"></i> 1</button>
             <div id="map_info" class="clearfix">
                 <p class="l">
                     <time class="date">8/3</time>
                     <time class="time">10:10</time>
                 </p>
-            <div class="floor r">1F</div>
+            <div class="floor r">1</div>
             </div><!--map_info-->
             <div id="hotkey_info">
                 <div class="group2">
@@ -55,7 +56,7 @@ if ($PAGE['ACTIVITY_INFO']['ACTION_ID'] == 'user-program') {
                     </table>
                 </div> <!-- group1 -->
             </div> <!-- hotkey_info -->
-        <button class="custom_btn next_floor" style="float:right" onClick="trigger_slider_floor(2);">2F <i class="icon next" style="vertical-align:baseline;" alt="Next"></i></button>
+        <button class="custom_btn next_floor" style="float:right" onClick="trigger_slider_floor(2);">2 <i class="icon next" style="vertical-align:baseline;" alt="Next"></i></button>
     </div><!-- diy_controller -->
     <div id="map" class="program grid_9 right">
         <div id="program_info" style="display:block;"></div>

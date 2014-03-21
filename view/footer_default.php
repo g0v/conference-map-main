@@ -1,4 +1,4 @@
-<div id="ft_wrap" class="clearfix"><div id="ft"  class="grid_12 clearfix">目前線上聊天功能無法在平板及手機上提供完整的服務，請您暫時使用電腦來瀏覽本網站。對您造成不便請見諒。<br>悠夏爾科技股份有限公司 &copy; 2013 Unisharp. All Rights Reserved.</div></div>
+<div id="ft_wrap" class="clearfix"><div id="ft"  class="grid_12 clearfix">目前線上聊天功能無法在平板及手機上提供完整的服務，請您暫時使用電腦來瀏覽本網站。對您造成不便請見諒。<b</div></div>
 
 <?php
 #popup_tooltip 預設應為隱藏,且mobile沒有此功能
