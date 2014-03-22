@@ -19,6 +19,7 @@ if (strlen($PAGE['ACTIVITY_INFO']['ACTIVITY_ID']) > 0) {
         <span id="activity_id"><?php echo $PAGE['ACTIVITY_INFO']['ACTIVITY_ID'];?></span>
         <ul id="nav">
             <li class="<?php echo ($cur_tab == 'chat-map') ? 'cur': '';?> mobile_float_r"><a href="/">聊天地圖</a></li>
+            <li class="<?php echo ($cur_tab == 'program') ? 'cur': '';?> mobile_float_r"><a href="/congressoccupied/program">Schedule</a></li>
             <li class="<?php echo ($cur_tab == 'about') ? 'cur': '';?> mobile_float_r"><a href="/about">About</a></li>
         </ul>
     </div>
