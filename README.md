@@ -17,6 +17,7 @@
 ## Licensing
 
  * Copyright (C) 2013-2014 UniSharp Inc.
+ * Copyright (C) 2014 g0v Contributors
  * Distributed Under the MIT License.
 
 ### Third Party License
