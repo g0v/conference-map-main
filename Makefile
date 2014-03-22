@@ -1,4 +1,13 @@
-all: todo gen-app-cache
+all: test
+
+ls-to-js:
+	./node_modules/.bin/lsc -c assets/ls/
+
+test:
+	./node_modules/.bin/lsc assets/ls/ethercalc-fetcher.ls
+
+
+#all: todo gen-app-cache
 
 gen-app-cache-ts:
 	./scripts/gen-app-cache.sh ts > unisharp-map.appcache
