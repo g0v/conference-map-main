@@ -124,14 +124,15 @@ if ($PAGE['ACTIVITY_INFO']['ACTION_ID'] === null) {
 
 switch ($PAGE['PATH_INFO']['PATH_2']) {
 case 'program':
+case '':
     // 議程
     $PAGE['USER_INFO']['U_ID'] = $PAGE['USER_INFO']['U_ID_FROM_COOKIE'];
+    $PAGE['ACTIVITY_INFO']['ACTION_ID'] = 'program';
     Page::load('header', $view_data);
     Page::load('page/program', $view_data);
     break;
 
 case 'chat-map':
-case '':
     // 聊天地圖
     $PAGE['ACTIVITY_INFO']['ACTION_ID'] = 'chat-map';
     $PAGE['USER_INFO']['U_ID'] = $PAGE['USER_INFO']['U_ID_FROM_COOKIE'];

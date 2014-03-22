@@ -1,3 +1,8 @@
+## 零時廣場開發
+
+ * 目前 `assets/js` 中的 code 都待整理，先不要看
+ * 從 ethercalc 拉資料的 function 額外分出來在 `assets/ls/g0v.ls`
+
 ## Pre-requirement
 
  * php5-redis

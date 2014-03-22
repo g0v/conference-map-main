@@ -315,6 +315,8 @@ function GetTimeRange(iIndex) {
 
 function ShowDateTable(aDate) {
     $('#DateTable').html("");
+    console.log("XXX");
+    console.log(aDate);
 
     var sClass = "";
     for (var i = 0; i < aDate.length; i = i + 1) {
