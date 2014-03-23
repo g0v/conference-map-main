@@ -1,13 +1,21 @@
 ## 零時廣場開發
 
- * 目前 `assets/js` 中的 code 都待整理，先不要看
- * 從 ethercalc 拉資料的 function 額外分出來在 `assets/ls/g0v.ls`
+ * `assets/js/*` => 待整理的舊 code，先不用看
+ * `assets/ls/*` => **目前的開發**在此
 
-## Pre-requirement
+## How to Start
 
- * php5-redis
- * php5-json
- * [Conference Map socket.io server](https://github.com/UniSharp/conference-map-message-server)
+ * just `make`
+
+## Requirement 
+
+ * 基本需求
+   * php5 & php5-json (未來會將 php 抽離，變成純 html + js 的架構)
+   * node.js & npm
+
+ * 只有在「聊天地圖」、「使用者議程」等功能需要
+   * php5-redis
+   * [Conference Map socket.io server](https://github.com/UniSharp/conference-map-message-server)
 
 ## TODO
 
