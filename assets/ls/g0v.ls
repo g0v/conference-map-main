@@ -73,9 +73,6 @@ display-room = ->
     height = "#{room.height * each_height - (rooms_div_padding * 2)}px"
     z-index = room.zindex
 
-    console.log \ww
-    console.log width
-
 
     room-style = "top: #{top}; left:#{left}; z-index:#{z-index}; width:#{width}; height: #{height}; display:block; position: absolute;"
     str = "<div id='' data-id='' data-location='' class='session clearfix' style='#{room-style}'><span class='room_name room_tag'>#{room.name}</span></div>"
