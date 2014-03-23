@@ -5,30 +5,14 @@ if (!defined('FROM_INDEX')) die ('No permission');
         var blMobile = false;
         var blShowRoomSession = true;
 
+        debug = function() {
+            console.log ($mapInfo);
+        }
+
         $(function() {
-            $("#edit_my_program").show();
-            load_customer_nickname_tab("{$PAGE['BUDDY_INFO']['BUDDY_LIST']}");
-            load_rooms("ShowRooms('AfterShowRooms();');");
+            fetchEthercalc(displayRoom);
         });
 
-        function AfterShowRooms(){
-            screenSize();
-            LoadSlidesjs();
-            load_programs_new(ShowProgram);
-            console.log("after");
-        }
-
-        function ShowProgram(){
-            if(aryDate.length > 0){
-                SetCurrentProgramIndex();
-                ShowDateTable(aryDate);
-                ShowData();
-            }
-        }
-
-        function fb_CallBack(){
-
-        }
 
     </script>
 </head>

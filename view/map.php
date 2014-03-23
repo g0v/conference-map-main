@@ -6,8 +6,8 @@
             <span class="txt"></span>
             <span class="triangle"></span>
         </div>
-        <div id="layer_slides">
-            <div id="F1">
+        <div id="map-container" style="position: relative;">
+            <div id="F1" class='clearfix' style="position: relative; top: 0px; left: 0px; width: 100%; z-index: 10;">
 <?php
     for($iY = 0 ; $iY <= 17 ; $iY++) {
         echo '<div class="y '. $iY .'  clearfix" data-yposition="'.$iY.'">';
@@ -19,5 +19,5 @@
     }
 ?>
             </div> <!-- F1 -->
-        </div><!-- layer_slides -->
+        </div><!-- map-contnet -->
     </div><!--＃map.program-->

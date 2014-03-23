@@ -94,16 +94,31 @@ var ADAPT_CONFIG = {
   ]
 };
 </script>
+<script src="/assets/js/lib/jquery-1.9.1.js"></script>
 <script src="/assets/js/js_plugins.min.js"></script>
-<script src="/assets/ls/g0v.js"></script>
 <script src="/assets/js/utility.js?ts=1375462882"></script>
-
+<script src="/assets/ls/g0v.js"></script>
 <script>
-//網頁載入完成時隱藏最頂的網址列
-window.onload = function(){
-    setTimeout(function(){
-    window.scrollTo(0, 1);
-}, 100);
-    fb_CallBack();
+function LoadSlidesjs(){
+
+    //SlidesJS Required: Initialize SlidesJS with a jQuery doc ready
+    //use http://slidesjs.com/
+    $(function() {
+        $('#layer_slides').slidesjs({
+            width: 940,
+            height: 528,
+            navigation: {
+                //effect: "fade"
+            },
+            pagination: {
+                //effect: "fade"
+            },
+            effect: {
+                fade: {
+                    // speed: 400
+                }
+            }
+        });
+    });
 }
 </script>
