@@ -2,12 +2,12 @@
          <div class="grid_3 left clearfix">
              <nav class="date clearfix">
                  <ul  class="clearfix" id="DateTable">
-                 DateTable
+                 主題時間軸 (T.B.D.)
                  </ul>
              </nav><!-- date -->
              <div class="timeline">
                  <ul class="clearfix" id="TimeTable">
-                 TimeTable
+
                  </ul>
              </div><!-- #timeline -->
              <div id="g0v-left-bar">

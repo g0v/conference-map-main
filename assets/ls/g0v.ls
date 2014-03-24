@@ -1,18 +1,32 @@
+$xss = (str) ->
+  document.create-text-node str .data
+
+$digit = (num) ->
+  num -= /\D/g
+  parse-int num
+
+$trim-quotes = (str) ->
+  str -= /^"|"$/g
+
 $map-info =
   room-array: []
 
 class $Room
   (...) ->
-    @id = &0
-    @name = (&1 -= /^"|"$/g)
-    @x = &2
-    @y = &3
-    @width = &4
-    @height = &5
-    @zindex = &6
+    @id = &0 |> $xss
+    @name = &1 |> $trim-quotes |> $xss
+    @topic = &2 |> $trim-quotes |> $xss
+    @content = &3 |> $trim-quotes |> $xss
+    @x = &4 |> $digit
+    @y = &5 |> $digit
+    @width = &6 |> $digit
+    @height = &7 |> $digit
+    @zindex = &8 |> $digit
 
+
+# need jquery-csv, included from view/header.php
 fetch-ethercalc = (cb) ->
-  program-url = 'https://ethercalc.org/_/g0v.today/csv'
+  program-url = 'https://ethercalc.org/_/congressoccupied-map/csv'
   $.ajax {
     url: program-url
     type: 'GET'
@@ -23,7 +37,7 @@ fetch-ethercalc = (cb) ->
       csv -= /^\"?#.*\n/gm
       current-table = void
       entries = for line in csv.split /\n/ when line
-        fields = line.split /,/
+        fields = $.csv.to-array line
         #console.log "line = #line"
 
         # get table
@@ -32,19 +46,19 @@ fetch-ethercalc = (cb) ->
           continue
 
         if current-table == '{T:Room}'
-          [id, name, x, y, width, height, zindex] = fields
+          [id, ...] = fields
           if !id or id == '{id}'
             # skip the metadata row
             continue
           $map-info.room-array.push new $Room ...fields
 
-        if current-table == '{T:Schedule}'
-          [id, topic, speaker_id, time_start, time_end, introduction, room_id, url] = fields
-          if !id or id == '{id}'
-            # skip the metadata row
-            continue
-          time_start -= /^"|"$/g
-          time_end -= /^"|"$/g
+        # if current-table == '{T:Schedule}'
+        #   [id, topic, speaker_id, time_start, time_end, introduction, room_id, url] = fields
+        #   if !id or id == '{id}'
+        #     # skip the metadata row
+        #     continue
+        #   time_start -= /^"|"$/g
+        #   time_end -= /^"|"$/g
 
       cb!
     # end ajax.success
@@ -53,7 +67,9 @@ fetch-ethercalc = (cb) ->
 
 display-room = ->
   window-width = window.inner-width
+  i = 0
   for room in $map-info.room-array
+    node-id = "room_#{i}"
     if window-width < 760
       each_width = each_height = 20
       rooms_div_padding = 4
@@ -75,13 +91,33 @@ display-room = ->
 
 
     room-style = "top: #{top}; left:#{left}; z-index:#{z-index}; width:#{width}; height: #{height}; display:block; position: absolute;"
-    str = "<div id='' data-id='' data-location='' class='session clearfix' style='#{room-style}'><span class='room_name room_tag'>#{room.name}</span></div>"
-    $ '#F1' .prepend str
+    str = "
+        <span class='room_name room_tag'>#{room.name}</span>
+        <span><b>#{room.topic}</b></span><br />
+        <span class='program_desc'>#{room.content}</span>
+"
+    inner-node = document.create-element \div
+    inner-node.class-name = 'session clearfix'
+    inner-node.style = room-style
+    inner-node.innerHTML = str
+
+    node = document.create-element \div
+    node.append-child inner-node
+    node.id = node-id
+    node.onclick = ->
+      $ '#popup' .html str
+      $ '#popup' .b-popup!
+      true
+
+    # show floor 1
+    $ '#F1' .prepend node
+
+
 
 
 
 window.onload = ->
-  # 網頁載入完成時隱藏最頂的網址列
+  # for mobile: 網頁載入完成時隱藏最頂的網址列
   setTimeout ->
     window.scrollTo(0, 1);
   , 100

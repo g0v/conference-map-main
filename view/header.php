@@ -96,7 +96,8 @@ var ADAPT_CONFIG = {
 </script>
 <script src="/assets/js/lib/jquery-1.9.1.js"></script>
 <script src="/assets/js/js_plugins.min.js"></script>
-<script src="/assets/js/utility.js?ts=1375462882"></script>
+<script src="/assets/js/lib/jquery.bpopup.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-csv/0.71/jquery.csv-0.71.min.js"></script>
 <script src="/assets/ls/g0v.js"></script>
 <script>
 function LoadSlidesjs(){
