@@ -61,7 +61,7 @@ if (empty($nickname)) {
 UsSecurity::filter_xss($nickname);
 ?>
 
-<title>我的活動地圖</title>;
+<title>我的活動地圖</title>
 <link rel="stylesheet" href="/assets/css/master.css?ts=999" />
 <link rel="stylesheet" href="/assets/css/default.css?ts=1375456132" />
 <link rel="apple-touch-icon" href="/assets/images/unisharp-map-icon.png"/>
