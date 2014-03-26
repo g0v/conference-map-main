@@ -11,14 +11,14 @@
         <meta name="apple-mobile-web-app-capable" content="yes" />
 
         <title>零時廣場</title>
-        <link rel="stylesheet" href="/assets/css/master.css?ts=999" />
-        <link rel="stylesheet" href="/assets/css/default.css?ts=1375456132" />
-        <link rel="apple-touch-icon" href="/assets/images/unisharp-map-icon.png"/>
-        <link rel="shortcut icon" href="/assets/images/unisharp-map-icon.png"/>
+        <link rel="stylesheet" href="assets/css/master.css?ts=999" />
+        <link rel="stylesheet" href="assets/css/default.css?ts=1375456132" />
+        <link rel="apple-touch-icon" href="assets/images/unisharp-map-icon.png"/>
+        <link rel="shortcut icon" href="assets/images/unisharp-map-icon.png"/>
         <noscript>
-            <link rel="stylesheet" href="/assets/css/mobile.min.css?ts=1375456132" />
+            <link rel="stylesheet" href="assets/css/mobile.min.css?ts=1375456132" />
         </noscript>
-        <link rel="stylesheet" href="/assets/css/ui-lightness/jquery-ui-1.10.3.custom.min.css" />
+        <link rel="stylesheet" href="assets/css/ui-lightness/jquery-ui-1.10.3.custom.min.css" />
     </head>
     <body>
         <div id="fb-root"></div>
@@ -679,7 +679,7 @@
 		 // Edit to suit your needs.
              var ADAPT_CONFIG = {
 			 // Where is your CSS?
-								path: '/assets/css/',
+								path: 'assets/css/',
 
 			 // false = Only run once, when page first loads.
 								// true = Change on window resize and page tilt.
@@ -699,41 +699,12 @@
 			 ]
 		 };
 		</script>
-		<script src="/assets/js/lib/jquery-1.9.1.js"></script>
-		<script src="/assets/js/js_plugins.min.js"></script>
-		<script src="/assets/js/lib/jquery.bpopup.min.js"></script>
+		<script src="assets/js/lib/jquery-1.9.1.js"></script>
+		<script src="assets/js/js_plugins.min.js"></script>
+		<script src="assets/js/lib/jquery.bpopup.min.js"></script>
 		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-csv/0.71/jquery.csv-0.71.min.js"></script>
-		<script src="/assets/ls/g0v.js"></script>
+		<script src="assets/ls/g0v.js"></script>
 		<script>
-		 function LoadSlidesjs(){
-
-			 //SlidesJS Required: Initialize SlidesJS with a jQuery doc ready
-			 //use http://slidesjs.com/
-			 $(function() {
-				 $('#layer_slides').slidesjs({
-					 width: 940,
-					 height: 528,
-					 navigation: {
-						 //effect: "fade"
-					 },
-					 pagination: {
-						 //effect: "fade"
-					 },
-					 effect: {
-						 fade: {
-							 // speed: 400
-						 }
-					 }
-				 });
-			 });
-		 }
-		</script>
-
-
-		<script>
-		 var blMobile = false;
-		 var blShowRoomSession = true;
-
 		 debug = function() {
 			 console.log ($mapInfo);
 		 }
@@ -741,10 +712,6 @@
 		 $(function() {
 			 fetchEthercalc(displayRoom);
 		 });
-
-
 		</script>
-        <script src="/assets/js/event.js?ts=1375589732"></script>
-        <script src="/assets/js/facebook.js?08021115"></script>
     </body>
 </html>
