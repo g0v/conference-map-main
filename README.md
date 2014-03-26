@@ -1,26 +1,21 @@
 ## 零時廣場開發
 
- * `assets/js/*` => 待整理的舊 code，先不用看
- * `assets/ls/*` => **目前的開發**在此
+ * 目前有用到的 code
+   * `assets/ls/*`
+   * `index.html`
 
-## How to Start
+ * 舊的 code
+   * `assets/js/*` => 待整理的舊 code，先不用看
+   * `*.php` => 舊 code, 待移除
 
- * just `make`
-
-## Requirement 
-
- * 基本需求
-   * php5 & php5-json (未來會將 php 抽離，變成純 html + js 的架構)
-   * node.js & npm
-
- * 只有在「聊天地圖」、「使用者議程」等功能需要
-   * php5-redis
-   * [Conference Map socket.io server](https://github.com/UniSharp/conference-map-message-server)
+ * How to start
+   * `make`
 
 ## TODO
 
- * [TODO] Use ethercalc as the map/room/programs/conference backend.
- * nginx support? (currently only tested on apache2)
+ * IE 相容性測試
+ * RWD
+ * 議程時間軸
 
 ## Licensing
 
@@ -36,7 +31,7 @@
 | jQuery JavaScript Library v1.9.1     | MIT                                    |
 | jQuery UI - v1.10.3                  | MIT                                    |
 | [bPopup](http://dinbror.dk/bpopup)   | MIT                                    |
-| [jquery.slides.js](http://www.slidesjs.com/) | Apache license                 |
+| [jquery.slides.js](http://www.slidesjs.com/) (目前不需要了) | Apache license                 |
 | 960 Grid System ~ Core CSS           | Licensed under GPL and MIT             |
 
 
