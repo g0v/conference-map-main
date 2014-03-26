@@ -11,6 +11,9 @@ $trim-quotes = (str) ->
 $map-info =
   room-array: []
 
+debug = ->
+  console.log $map-info
+
 class $Room
   (...) ->
     @id = &0 |> $xss
@@ -25,9 +28,15 @@ class $Room
 
 
 # need jquery-csv, included from view/header.php
-fetch-ethercalc = (cb) ->
-  doc = window.location.pathname.replace '/' ''
-  if doc.length <= 0
+fetch-ethercalc = (doc, cb) ->
+  if $map-info.room-array
+    $map-info.room-array = []
+  old-data = document.get-element-by-id 'room-data'
+
+  while old-data.first-child
+    old-data.remove-child old-data.first-child
+
+  if !doc
     doc = 'congressoccupied-map'
 
   program-url = "https://ethercalc.org/_/#{doc}/csv"
@@ -69,11 +78,11 @@ fetch-ethercalc = (cb) ->
   }
 
 
-display-room = ->
+$display-room = ->
   window-width = window.inner-width
   i = 0
   for room in $map-info.room-array
-    node-id = "room_#{i}"
+    node-id = "room_#{i++}"
     if window-width < 760
       each_width = each_height = 20
       rooms_div_padding = 4
@@ -102,7 +111,7 @@ display-room = ->
 "
     inner-node = document.create-element \div
     inner-node.class-name = 'session clearfix'
-    inner-node.style = room-style
+    inner-node.style.css-text = room-style
     inner-node.innerHTML = str
 
     node = document.create-element \div
@@ -114,15 +123,25 @@ display-room = ->
       true
 
     # show floor 1
-    $ '#F1' .prepend node
+    $ '#room-data' .prepend node
 
 
 
+$get-hashtag = ->
+  doc = location.hash
+  doc -= /^#/
+  doc -= /\?.*$/
+  doc
 
-
-window.onload = ->
+$ document .ready ->
   # for mobile: 網頁載入完成時隱藏最頂的網址列
   setTimeout ->
     window.scrollTo(0, 1);
   , 100
-  # fb_CallBack()
+
+  window.onhashchange = ->
+    doc = $get-hashtag!
+    fetch-ethercalc doc, $display-room
+    true
+
+  fetch-ethercalc $get-hashtag!, $display-room
