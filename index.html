@@ -666,83 +666,85 @@
 
         </div>
         <div id="ft_wrap" class="clearfix">
-			<div id="ft"  class="grid_12 clearfix">目前線上聊天功能無法在平板及手機上提供完整的服務，請您暫時使用電腦來瀏覽本網站。對您造成不便請見諒。<b</div>
-			</div>
-            <div id="all_wrap_bg"></div>
-            <div id="animation_map_box"></div>
-            <input id="personal_fb_id" name="personal_fb_id" type="hidden" value="">
+			<div id="ft"  class="clearfix">
+				g0v.tw
+            </div>
+		</div>
+        <div id="all_wrap_bg"></div>
+        <div id="animation_map_box"></div>
+        <input id="personal_fb_id" name="personal_fb_id" type="hidden" value="">
 
-            <div id="fb-root"></div>
-			<script type="text/javascript">
-			 // Edit to suit your needs.
+        <div id="fb-root"></div>
+		<script type="text/javascript">
+		 // Edit to suit your needs.
              var ADAPT_CONFIG = {
-				 // Where is your CSS?
-                   path: '/assets/css/',
+			 // Where is your CSS?
+								path: '/assets/css/',
 
-				 // false = Only run once, when page first loads.
-                   // true = Change on window resize and page tilt.
-                   dynamic: true,
+			 // false = Only run once, when page first loads.
+								// true = Change on window resize and page tilt.
+								dynamic: true,
 
-				 // First range entry is the minimum.
-                   // Last range entry is the maximum.
-                   // Separate ranges by "to" keyword.
-                   range: [
-					 '0px    to 760px  = mobile.css?1375092209',
-					 '760px  to 980px  = 720.css',
-					 '980px  to 1280px = 1200.css',
-					 '1280px to 1600px = 1200.css',
-					 '1600px to 1940px = 1200.css',
-					 '1940px to 2540px = 1200.css',
-					 '2540px           = 1200.css'
-				 ]
-			 };
-			</script>
-			<script src="/assets/js/lib/jquery-1.9.1.js"></script>
-			<script src="/assets/js/js_plugins.min.js"></script>
-			<script src="/assets/js/lib/jquery.bpopup.min.js"></script>
-			<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-csv/0.71/jquery.csv-0.71.min.js"></script>
-			<script src="/assets/ls/g0v.js"></script>
-			<script>
-			 function LoadSlidesjs(){
+			 // First range entry is the minimum.
+								// Last range entry is the maximum.
+								// Separate ranges by "to" keyword.
+								range: [
+				 '0px    to 760px  = mobile.css?1375092209',
+				 '760px  to 980px  = 720.css',
+				 '980px  to 1280px = 1200.css',
+				 '1280px to 1600px = 1200.css',
+				 '1600px to 1940px = 1200.css',
+				 '1940px to 2540px = 1200.css',
+				 '2540px           = 1200.css'
+			 ]
+		 };
+		</script>
+		<script src="/assets/js/lib/jquery-1.9.1.js"></script>
+		<script src="/assets/js/js_plugins.min.js"></script>
+		<script src="/assets/js/lib/jquery.bpopup.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-csv/0.71/jquery.csv-0.71.min.js"></script>
+		<script src="/assets/ls/g0v.js"></script>
+		<script>
+		 function LoadSlidesjs(){
 
-				 //SlidesJS Required: Initialize SlidesJS with a jQuery doc ready
-				 //use http://slidesjs.com/
-				 $(function() {
-					 $('#layer_slides').slidesjs({
-						 width: 940,
-						 height: 528,
-						 navigation: {
-							 //effect: "fade"
-						 },
-						 pagination: {
-							 //effect: "fade"
-						 },
-						 effect: {
-							 fade: {
-								 // speed: 400
-							 }
-						 }
-					 });
-				 });
-			 }
-			</script>
-
-
-			<script>
-			 var blMobile = false;
-			 var blShowRoomSession = true;
-
-			 debug = function() {
-				 console.log ($mapInfo);
-			 }
-
+			 //SlidesJS Required: Initialize SlidesJS with a jQuery doc ready
+			 //use http://slidesjs.com/
 			 $(function() {
-				 fetchEthercalc(displayRoom);
+				 $('#layer_slides').slidesjs({
+					 width: 940,
+					 height: 528,
+					 navigation: {
+						 //effect: "fade"
+					 },
+					 pagination: {
+						 //effect: "fade"
+					 },
+					 effect: {
+						 fade: {
+							 // speed: 400
+						 }
+					 }
+				 });
 			 });
+		 }
+		</script>
 
 
-			</script>
-            <script src="/assets/js/event.js?ts=1375589732"></script>
-            <script src="/assets/js/facebook.js?08021115"></script>
+		<script>
+		 var blMobile = false;
+		 var blShowRoomSession = true;
+
+		 debug = function() {
+			 console.log ($mapInfo);
+		 }
+
+		 $(function() {
+			 fetchEthercalc(displayRoom);
+		 });
+
+
+		</script>
+        <script src="/assets/js/event.js?ts=1375589732"></script>
+        <script src="/assets/js/facebook.js?08021115"></script>
     </body>
 </html>
