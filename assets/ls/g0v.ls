@@ -26,7 +26,11 @@ class $Room
 
 # need jquery-csv, included from view/header.php
 fetch-ethercalc = (cb) ->
-  program-url = 'https://ethercalc.org/_/congressoccupied-map/csv'
+  doc = window.location.pathname.replace '/' ''
+  if doc.length <= 0
+    doc = 'congressoccupied-map'
+
+  program-url = "https://ethercalc.org/_/#{doc}/csv"
   $.ajax {
     url: program-url
     type: 'GET'
