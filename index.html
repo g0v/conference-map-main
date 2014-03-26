@@ -63,6 +63,7 @@
                         </div>
                         <div id="map-container" style="position: relative;">
                             <div id="F1" class='clearfix' style="position: relative; top: 0px; left: 0px; width: 100%; z-index: 10;">
+								<div id="room-data"></div>
 								<div class="y 0  clearfix" data-yposition="0">
 									<div class="x 0" data-room="1:0:0:1"></div>
 									<div class="x 1" data-room="1:1:0:1"></div>
@@ -704,14 +705,5 @@
 		<script src="assets/js/lib/jquery.bpopup.min.js"></script>
 		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-csv/0.71/jquery.csv-0.71.min.js"></script>
 		<script src="assets/ls/g0v.js"></script>
-		<script>
-		 debug = function() {
-			 console.log ($mapInfo);
-		 }
-
-		 $(function() {
-			 fetchEthercalc(displayRoom);
-		 });
-		</script>
     </body>
 </html>
