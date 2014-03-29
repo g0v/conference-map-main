@@ -1,8 +1,7 @@
 all: install ls-to-js
 
 ls-to-js:
-	./node_modules/.bin/lsc -c -b assets/ls/room.ls
-	./node_modules/.bin/lsc -c -b assets/ls/main.ls
+	./node_modules/.bin/lsc -c -b *.ls
 
 test:
 	./node_modules/.bin/lsc assets/ls/ethercalc-fetcher.ls

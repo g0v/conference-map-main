@@ -8,9 +8,6 @@ $digit = (num) ->
 $trim-quotes = (str) ->
   str -= /^"|"$/g
 
-$map-info =
-  room-array: []
-
 debug = ->
   console.log $map-info
 
@@ -40,6 +37,7 @@ $fetch-ethercalc = (doc, cb) ->
 # ///////////////////////////////////
 #         main program
 # ///////////////////////////////////
+
 update = (doc) ->
   log \update
   if $map-info.room-array
@@ -49,7 +47,7 @@ update = (doc) ->
   while old-data.first-child
     old-data.remove-child old-data.first-child
   if !doc
-    doc = 'map-demo-1'
+    doc = 'map:event1'
 
   $fetch-ethercalc doc, $update-room
 

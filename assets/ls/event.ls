@@ -1,3 +1,6 @@
+$map-info =
+  room-array: []
+
 class $Room
   (...) ->
     @id = &0 |> $xss
