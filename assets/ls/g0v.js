@@ -54,7 +54,7 @@ fetchEthercalc = function(doc, cb){
     oldData.removeChild(oldData.firstChild);
   }
   if (!doc) {
-    doc = 'congressoccupied-map';
+    doc = 'map-demo-1';
   }
   programUrl = "https://ethercalc.org/_/" + doc + "/csv";
   return $.ajax({
