@@ -37,7 +37,7 @@ fetch-ethercalc = (doc, cb) ->
     old-data.remove-child old-data.first-child
 
   if !doc
-    doc = 'congressoccupied-map'
+    doc = 'map-demo-1'
 
   program-url = "https://ethercalc.org/_/#{doc}/csv"
   $.ajax {
