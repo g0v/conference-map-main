@@ -4,10 +4,6 @@
    * `assets/ls/*`
    * `index.html`
 
- * 舊的 code
-   * `assets/js/*` => 待整理的舊 code，先不用看
-   * `*.php` => 舊 code, 待移除
-
  * How to start
    * `make`
 
@@ -23,7 +19,7 @@
    * 議程時間軸
    * 事件回報系統
  * 文件
-   * [零時廣場緣起 - 當新民主遇上線路松](http://hackfoldr.org/congressnetwork/sSXcU0n0Yv4) 
+   * [零時廣場緣起 - 當新民主遇上線路松](http://hackfoldr.org/congressnetwork/sSXcU0n0Yv4)
    * [零時廣場 User Story](http://hackfoldr.org/congressnetwork/dw3SAk6gdcb)
    * [Conference API 整理](https://g0v.hackpad.com/Conference-API--Uif7IainCU9)
  * 相關專案
@@ -43,18 +39,5 @@
 | jQuery JavaScript Library v1.9.1     | MIT                                    |
 | jQuery UI - v1.10.3                  | MIT                                    |
 | [bPopup](http://dinbror.dk/bpopup)   | MIT                                    |
-| [jquery.slides.js](http://www.slidesjs.com/) (目前不需要了) | Apache license                 |
 | 960 Grid System ~ Core CSS           | Licensed under GPL and MIT             |
 
-
-
-## Frontend Developer Note
-
-* install node.js and npm
-* `npm install`
-
-| Task            | Command       |
-| -------------   |:-------------:|
-| css beautifier  | grunt cssbu   |
-| js beautifier   | grunt jsbu    |
-| js Hint  	      | grunt jshi    |
