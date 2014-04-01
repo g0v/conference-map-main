@@ -12,14 +12,14 @@ test:
 
 #all: todo gen-app-cache
 
-gen-app-cache-ts:
-	./scripts/gen-app-cache.sh ts > unisharp-map.appcache
-	git diff unisharp-map.appcache
+gen-appcache-ts:
+	./scripts/gen-app-cache.sh ts > map.appcache
+	git diff map.appcache
 
 
-gen-app-cache:
-	./scripts/gen-app-cache.sh > unisharp-map.appcache
-	git diff unisharp-map.appcache
+gen-appcache:
+	./scripts/gen-app-cache.sh > map.appcache
+	git diff map.appcache
 
 fetch:
 	./scripts/fetch-coscup-program.sh
