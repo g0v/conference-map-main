@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# 2014:04:01-22:46:38
+# 2014:04:01-22:47:20
 /Gruntfile.js
 /node_modules/grunt-contrib-concat/Gruntfile.js
 /node_modules/grunt-contrib-concat/tasks/concat.js
@@ -599,6 +599,9 @@ CACHE MANIFEST
 /assets/js/lib/jquery-1.9.1.js
 /assets/js/lib/jquery.bpopup.min.js
 /assets/js/lib/adapt.min.js
+/assets/ls/event.js
+/assets/ls/main.js
+/assets/ls/schedule.js
 /assets/css/720.css
 /assets/css/mobile.css
 /assets/css/1200.css
