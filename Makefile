@@ -12,12 +12,12 @@ test:
 
 #all: todo gen-app-cache
 
-gen-appcache-ts:
+gen-appcache-ts: all
 	./scripts/gen-app-cache.sh ts > map.appcache
 	git diff map.appcache
 
 
-gen-appcache:
+gen-appcache: all
 	./scripts/gen-app-cache.sh > map.appcache
 	git diff map.appcache
 
