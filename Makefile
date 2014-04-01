@@ -3,20 +3,23 @@ all: install ls-to-js
 ls-to-js:
 	./node_modules/.bin/lsc -c -b assets/ls/*.ls
 
+clean:
+	rm -f ./assets/ls/*.js
+
 test:
 	./node_modules/.bin/lsc assets/ls/ethercalc-fetcher.ls
 
 
 #all: todo gen-app-cache
 
-gen-app-cache-ts:
-	./scripts/gen-app-cache.sh ts > unisharp-map.appcache
-	git diff unisharp-map.appcache
+gen-appcache-ts: all
+	./scripts/gen-app-cache.sh ts > map.appcache
+	git diff map.appcache
 
 
-gen-app-cache:
-	./scripts/gen-app-cache.sh > unisharp-map.appcache
-	git diff unisharp-map.appcache
+gen-appcache: all
+	./scripts/gen-app-cache.sh > map.appcache
+	git diff map.appcache
 
 fetch:
 	./scripts/fetch-coscup-program.sh

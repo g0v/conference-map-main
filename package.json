@@ -15,6 +15,6 @@
   "devDependencies": {
     "LiveScript": "1.2.*",
     "grunt-cssbeautifier": "~0.1.1",
-    "grunt": "~0.4.4",
+    "grunt": "~0.4.4"
   }
 }
