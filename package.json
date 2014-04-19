@@ -15,6 +15,10 @@
   "devDependencies": {
     "LiveScript": "1.2.*",
     "grunt-cssbeautifier": "~0.1.1",
-    "grunt": "~0.4.4"
+    "grunt": "~0.4.4",
+    "gulp": "~3.6.1",
+    "gulp-livescript": "~0.2.1",
+    "gulp-changed": "~0.3.0",
+    "gulp-concat": "~2.2.0"
   }
 }
