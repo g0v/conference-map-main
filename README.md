@@ -5,6 +5,7 @@
    * `index.html`
 
  * How to start
+   * `npm install`
    * `npm run start`
 
 ## Demo
