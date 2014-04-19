@@ -5,7 +5,7 @@
    * `index.html`
 
  * How to start
-   * `make`
+   * `npm run start`
 
 ## Demo
 
