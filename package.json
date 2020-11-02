@@ -2,9 +2,9 @@
   "name": "project-confmap-main",
   "version": "0.0.1",
   "description": "",
-  "main": "Gruntfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "gulp --require LiveScript build",
+    "start": "gulp --require LiveScript dev"
   },
   "repository": {
     "type": "git",
@@ -14,7 +14,10 @@
   "license": "MIT",
   "devDependencies": {
     "LiveScript": "1.2.*",
-    "grunt-cssbeautifier": "~0.1.1",
-    "grunt": "~0.4.4"
+    "gulp": "~3.6.1",
+    "gulp-util": "~2.2.14",
+    "gulp-livescript": "~0.2.1",
+    "gulp-changed": "~0.3.0",
+    "gulp-connect": "~2.0.5"
   }
 }
