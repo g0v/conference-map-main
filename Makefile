@@ -1,10 +1,10 @@
 all: build
 
 build:
-	./node_modules/.bin/gulp
+	npm run build
 
 dev: build
-	./node_modules/.bin/gulp dev
+	npm run start
 
 clean:
 	rm -f ./assets/js/*.js

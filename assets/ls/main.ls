@@ -23,7 +23,7 @@ $get-hashtag = ->
 # need jquery-csv, included from view/header.php
 $fetch-ethercalc = (doc, cb) ->
   log \fetch-ethercalc + " " + doc
-  program-url = "https://ethercalc.org/_/#{doc}/csv"
+  program-url = "https://ethercalc.net/_/#{doc}/csv"
   $.ajax {
     url: program-url
     type: 'GET'
